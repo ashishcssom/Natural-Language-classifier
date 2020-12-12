@@ -24,4 +24,4 @@ def RequestHandler():
         output=[]
     return(output)
 
-app.run(debug=True,threaded=True)
+app.run(debug=True)
