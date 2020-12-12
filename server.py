@@ -1,11 +1,5 @@
-"""
-.  .     .               .   .                                   .
-|\ |     |               |   |                                   |             o  ,- o
-| \| ,-: |-  . . ;-. ,-: |   | ,-: ;-. ,-: . . ,-: ,-: ,-.   ,-. | ,-: ,-. ,-. .  |  . ,-. ;-.
-|  | | | |   | | |   | | |   | | | | | | | | | | | | | |-'   |   | | | `-. `-. |  |- | |-' |
-'  ' `-` `-' `-` '   `-` '   ' `-` ' ' `-| `-` `-` `-| `-'   `-' ' `-` `-' `-' '  |  ' `-' '
-                                       `-'         `-'                           -'
-"""
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 from flask import Flask,request
 import pandas as pd
@@ -24,4 +18,4 @@ def RequestHandler():
         output=[]
     return(output)
 
-app.run(debug=True)
+app.run(debug=True,threaded=True)
