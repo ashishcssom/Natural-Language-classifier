@@ -10,16 +10,10 @@ import string
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity  
-from nltk.tokenize import sent_tokenize
 
 config=json.load(open(path+"/src/config.json","r"))
 
 # methods
-def sent_token(data):
-    """ tokenize the sentenses and put word limit restriction """
-    x=sent_tokenize(data)
-    y=[x[i] for i in range(len(x)) if len(x[i].split()) > config["WordRestriction"]]
-    return y
 
 def create_tokenizer_score(train,test):
     """ Function to create the  """
