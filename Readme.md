@@ -14,7 +14,7 @@ This package is to classify the sentenses into two categories.
 ```python
 import requests
 import json
-url = 'https://freewebservises.herokuapp.com/Request'
+url = 'https://freewebservices.herokuapp.com/Request'
 headers = {'content-type': 'application/json'}
 query=json.dumps({"_id":"1","textBody":"Could you give details of device"})
 output = requests.post(url, data = query,verify=True,headers=headers)
