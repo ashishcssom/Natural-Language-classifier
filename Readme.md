@@ -29,3 +29,8 @@ Copyright (c) 2020 Ashish Kumar
 
 # Credit
 Data science open source community
+
+# Contributors
+<a href="https://github.com/ashishkrb7/Natural-Language-classifier/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ashishkrb7/Natural-Language-classifier" />
+</a>
